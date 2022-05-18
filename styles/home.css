@@ -1,0 +1,63 @@
+*{
+    background-color: rgb(200, 195, 195);
+}
+h1{ 
+    color: brown;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    
+}
+/*Estoy posicionando MENU, ITBANK y losiconos de la derecha*/
+.navegacion{ /*Siempre se le pone flex al padre porque él va a ordenar a sus hijos*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Establesco un ancho fijo para el contenedor del menu*/
+.menu{
+    width: 40vw;
+}
+/*posiciono los iconos del navbar*/
+.iconos{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+/*Perzonalizo los iconos del nabvar*/
+.icono{
+    color: black;
+    /*font-size: ;*/
+    margin: 0 2% 0 2%;
+}
+/*Establezco la posicion de los dos divs dentro del navbar*/
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Esto es la barra de búsqueda*/
+.buscando{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    width: 40%;
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+}
+/*Esto es el input dondeel usuarioescribe lo que va a buscar*/
+.buscando>input{
+    border-color: transparent;
+    background-color: transparent;
+    width: 100%;
+}
+/*Esto es el icono de busqueda*/
+.fa-magnifying-glass-dollar{
+    margin-right: 5px;
+}
