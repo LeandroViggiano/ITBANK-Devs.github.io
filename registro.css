@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+
+.conteiner {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+/* Izquierda */
+.titulo {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.titulo-itbank{
+    display: flex;
+    margin: auto;
+    color: orangered;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 40px;
+    width: 70%;
+    text-align: left;
+}
+
+.titulo-itbank span {
+    color: orangered;
+}
+
+
+.titulo-itbank2{
+    display: flex;
+    margin: auto;
+    color: #17202A;
+    font-weight: 500;
+    font-family: "Poppins";
+    font-size: 35px;
+    width: 70%;
+    text-align: left;
+}
+.titulo img {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 267px;
+    margin-top: 70px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-top: 75px;
+}
+
+.lista {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.lista li {
+    list-style: none;
+    margin: 0 4%;
+}
+.lista a {
+    color: #17202A;
+    font-size: 20px;
+    font-family: 'Rubik';    
+}
+
+
+/* DERECHA */
+.acceso {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    height: 100vh;
+    background-color: #17202A;
+}
+
+.login {
+    display:block;
+    margin: auto;
+    width: 100%;
+}
+
+.registro {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+    margin-bottom: 70px;
+    width: 50%;
+}
+
+.registro h2 {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+.registro a {
+    color: #17202A;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.formulario {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+}
+
+.titulo_home{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu';
+    color: white;
+}
+.formulario input {
+    border: none;
+    width: 40%;
+    height: 50px;
+    padding: 5px 50px 5px 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Rubik';
+    background: white;
+    color: black;
+}
+
+.formulario #continuar {
+    margin-top: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.formulario #submit {
+    margin-top: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+
+}
+
+.conjunto-password{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-mensaje,
+.error-password {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #E81515;
+    width: 298px;
+    height: 40px;
+    visibility: hidden;
+}
+
+.error-mensaje i,
+.error-password i {
+    color: white;
+    margin: 5px;
+}
+.error-mensaje p,
+.error-password p {
+    color: white;
+    font-family: 'RUBIK';
+    margin: 5px;
+}
+
+.cambiar-contraseña {
+    margin-top: 10px;
+}
+
+.cambiar-contraseña a {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:1150px){
+    .titulo-itbank{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 88%;
+    }
+
+    .titulo-itbank2{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .main {
+        display: block;
+    }
+
+    .titulo {
+        display: block;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+
+    .titulo-itbank{
+        display: flex;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    
+    .titulo-itbank2{
+        display: flex;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        color: #17202A;
+        width: 90%;
+        font-size: 35px;
+    }
+    
+    
+    .titulo img {
+        display: flex;
+        margin: auto;
+        margin-top: 80px;
+        width: 75%;
+
+    }
+    
+    
+    .footer{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        height: auto;
+        margin: 70px 0 10px 0;
+    }
+    .lista {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .lista li {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 20px 0px;
+        padding: 15px;
+        background-color: #17202A;
+        width: 50%;
+    }
+
+    .lista li a {
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+    .acceso {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+        background-color: #17202A;
+    }
+
+
+    .registro {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .registro a {
+        color: #17202A;
+        text-decoration: none;
+        font-family: 'Rubik';
+        font-size: 20px;
+        text-transform: uppercase;
+        width: 100%;
+
+    }
+
+    .recordarC,
+    .nueva-cuenta {
+        border: none;
+    }
+}
+
+@media screen and (max-width:550px){
+    .lista {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:430px){
+    .titulo-itbank {
+        font-size: 35px;
+        width: 80%;
+        color: orangered;
+    }
+
+    .titulo-itbank2 {
+        font-size: 30px;
+        width: 70%;
+    }
+}
+
