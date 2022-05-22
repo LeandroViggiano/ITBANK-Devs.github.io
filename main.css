@@ -1,0 +1,131 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box ;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #dfe9f5;
+  
+}
+
+nav{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    background: linear-gradient(to right, #020a2d,
+    #4190de);
+    background: 0 20px 35px rgba(0, 0, 0, 0);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0  10px;    
+}
+.logo i{
+    margin-top: 5px;
+    width: 45px;
+    height: 40px;
+    font-size: 35px;
+}
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+
+}
+hr{
+    width: 90%;
+    border-top: 1px solid #585858;
+    margin: 1px auto;
+}
+
+.title{
+    color:#dfe9f5;
+    text-align: center;
+    margin-top: 20px;
+    font-size:20px;
+}
+
+a{
+    color: rgb(221, 217, 217);
+    position: relative;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fas, .fab .bx{
+    position:relative;
+    width: 70px;
+    height: 30px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+nav .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: -5px  
+}
+
+.menu-list:hover{
+    background: #eee;
+    color: #000;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    margin-left: -5px;
+    align-items: center;
+}
+
+.box{
+    background: #000;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box a{
+    padding: 10px 0 10px 0;
+}
+
+.box a:hover{
+    background: #585858;
+    width: 100%;
+}
+
+nav:hover{
+    width: 270px;
+    transition: all 0.5s ease;
+}
+
+.wrapper{
+    display: block;
+    margin-left:20%;
+    font-size: 20px;
+    color: #3833339c;
+    padding: 20px;
+}
