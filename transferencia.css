@@ -1,0 +1,815 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    height: auto;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-responsive {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+.izquierda {
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(to right, #020a2d,
+    #055380);
+    position: fixed;
+}
+
+.derecha {
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+
+/* izquierda */
+
+.navegacion {
+    width: 100%;
+    height: 100vh;
+    margin: auto;    
+}
+
+.fotos {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid white;
+}
+
+.fotos h3 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.usuario {
+    width: 100%;
+}
+.usuario img {
+    margin: 10px 0 5px 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 70px;
+    font-size: 50px;
+    color: white;
+}
+
+.usuario h4 {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    font-family: "Hind";
+    text-transform: uppercase;
+}
+
+
+
+/* IZQUIERDA - OPCIONES*/
+
+.opciones {
+    display: flex;
+    height: auto;
+    padding: 20px 0;
+
+}
+
+.lista {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Rubik";
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.opcion {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.opcion i {
+    color: white;
+    margin-right: 5px;
+}
+
+.conjunto {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    width: 80%;
+}
+
+
+/* IZQUIERDA - CERRAR SESION*/
+
+.cerrar-sesion{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: left;
+    height: auto;
+}
+
+.cerrar-sesion p {
+    font-family: "Rubik";
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+}
+
+/* DERECHA - TITULO */
+.header_derecha {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.header_derecha .titulo {
+    color: #17202A;
+    font-family: "Hind";
+    font-size: 25px;
+    margin-right: 25%;
+}
+
+.header_derecha input {
+    height: 50px;
+    border: none;
+    padding: 0 10px;
+    font-family: "Poppins";
+    border: 2px solid #17202A;
+    color: #17202A;
+    margin-left: 25%;
+}
+
+/* DERECHA - PARTE ARRIBA */
+.cuadrados {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.parte_arriba {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.parte_abajo {
+    width: 30%;
+    margin-left: 15px;
+}
+
+.cuadrados1y2 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.cuadrado1 {
+    background: linear-gradient(to right,#055380, #020a2d);
+    color: white;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/* CUADRADO 1 */
+.cuadrado1 {
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.centro{
+    display: block;
+    text-align: center;
+}
+
+input[type=button]{
+    margin-top: 1%;
+    padding: 7px;
+}
+input[type=text]{
+    margin-top: 1%;
+    text-align: center;
+    width: 50%;
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+
+.cuadrado1 p {
+    font-family: "Hind";
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.cuadrado1 h3 {
+    font-family: "Hind";
+    margin: 10px 0;
+    font-size: 24px;
+}
+.cuadrado1 .retirar-enviar {
+    margin: auto;
+    justify-content: center;
+}
+
+.retirar-enviar h2 a{
+    margin: 0 5px;
+    color: #17202A;
+    text-decoration: none;
+    font-size: 20px;
+    padding:  0 5px;
+    font-family: "Hind";
+    background-color: white;
+}
+
+/* CUADRADO 2 */
+.cuadrado2 {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.cuadrado2 .titulo-tarjetas {
+    font-family: "Hind";
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 8%;
+}
+
+.cuadrado2 .datos_tarjeta {
+    font-family: "Hind";
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+}
+
+.cuadrado4 {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #17202A;
+    padding: 20px 0;
+    border-radius: 20px;
+
+}
+
+.cuadrado4 .titulo-estadisticas {
+    color: white;
+    margin-top: 10px;
+    font-family: "Rubik";
+    font-size: 21px;
+    text-decoration: underline;
+}
+.graficos {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.grafico p {
+    margin-right: 10px;
+    color: white;
+    font-family: "Hind";
+}
+.cuadrado4 .grafico {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.grafico .barra-Ene {
+    width: 280px;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+.grafico .barra-Feb {
+    width: 150px;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+.grafico .barra-Mar {
+    width: 220px;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+.grafico .barra-Abr {
+    width: 140px;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+.grafico .barra-May {
+    width: 150px;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+
+/* Cuadrado 5 */
+h3{text-align: center;}
+
+.cuadrado5 {
+    text-align: center;
+    width: 80%;
+    height: 500px;
+    background: linear-gradient(to right,#055380, #020a2d);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.cuadrado5 .titulo-transaccion {
+    color: white;
+    padding: 30px 0 20px 0;
+    font-family: "Rubik";
+    font-size: 21px;
+    text-decoration: underline;
+    flex-wrap: wrap;
+}
+
+.transacciones {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.transaccion {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.transaccion p {
+    color: #17202A;
+    font-family: "Rubik";
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.suma {
+    color: darkgreen;
+}
+
+.resta {
+    color: red;
+}
+
+.fa-arrow-right {
+    color: darkgreen;
+}
+
+
+@media screen and (min-width: 1206px) {
+    .derecha{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1205px){
+    .parte_arriba {
+        width: 55%;
+    }
+
+    .parte_abajo {
+        width: 35%;
+    }
+
+
+    .cuadrado5 .titulo-transaccion {
+        color: white;
+        font-family: "Rubik";
+        font-size: 21px;
+        text-decoration: underline;
+    }
+
+    .transacciones {
+        width: 100%;
+        margin-top: 0px;
+        height: 400px;
+        overflow-y: auto;
+
+    }
+}
+@media screen and (max-width:820px){
+    .main {
+        display: block;
+        height: auto;
+    }
+    #menu {
+        display: block;
+        font-size: 30px;        
+        color: white;
+        padding: 20px;
+    }
+
+    .menu-responsive {
+        display: flex;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        background-color: #17202A;
+        width: 100%;
+        height: auto;
+
+    }
+
+    #menu.block {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+    }
+    .izquierda {
+        display: none;
+        position: fixed;
+        width: 40%;
+        height: auto;
+        top: 0px;
+    }
+
+    .izquierda.block {
+        display: block;
+    }
+
+    .navegacion {
+        width: 100%;
+        height: 100vh;
+        margin: auto;    
+    }
+    
+    .fotos {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        border-bottom: 3px solid white;
+    }
+    
+    .fotos h3 {
+       display: none;
+    }
+    
+    .usuario {
+        width: 100%;
+    }
+    .usuario img {
+        margin: 10px 0 5px 0;
+        width: 90px;
+        height: 90px;
+        border-radius: 70px;
+        font-size: 50px;
+        color: white;
+    }
+    
+    .usuario h4 {
+        font-size: 20px;
+        width: 100%;
+        color: white;
+        font-family: "Hind";
+        text-transform: uppercase;
+    }
+
+    /* DERECHA */
+
+    .cuadrados {
+        display: block;
+        width: 100%;
+    }
+    .derecha {
+        width: 100%;
+        height: 135vh;
+    }
+
+    .parte_arriba {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        margin: auto;
+
+    }
+    
+    .parte_abajo {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    .cuadrado5 {
+        text-align: center;
+        width: 90%;
+        height: auto;
+        background-color: #17202A;
+        border-radius: 40px;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    .cuadrado5 .titulo-transaccion {
+        color: white;
+        padding: 0px 0 20px 0;
+        font-family: "Rubik";
+        font-size: 21px;
+        text-decoration: underline;
+    }
+
+    .transacciones {
+        width: 100%;
+        margin-top: 0px;
+        height: 200px;
+        overflow-y: scroll;
+
+    }
+
+
+}
+
+
+
+@media screen and (max-width:414px){
+
+   
+    .main {
+        display: block;
+        height: auto;
+    }
+    #menu {
+        display: block;
+        font-size: 30px;        
+        color: white;
+        padding: 15px;
+    }
+
+    .menu-responsive {
+        display: flex;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        background-color: #17202A;
+        width: 100%;
+        height: auto;
+
+    }
+
+    #menu.block {
+        color: white;
+        position: fixed;
+        z-index: 1;
+        background: none;
+        top: 0px;
+    }
+    .izquierda {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 0px;
+    }
+
+    .izquierda.block {
+        display: block;
+    }
+
+    .fotos {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        border-bottom: 3px solid white;
+    }
+
+    .fotos h3 {
+        display: none;
+    }
+
+    .usuario img {
+        margin: 0;
+    }
+
+    .opcion {
+        display: flex;
+        width: 100%;
+        height: 55px;
+    }
+
+    .derecha {
+        width: 100%;
+    }
+
+    .parte_arriba{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    
+
+    /* HEADER DERECHA */
+
+    .header_derecha {
+        display: block;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .derecha .titulo {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #17202A;
+        font-family: "Hind";
+        font-size: 25px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .header_derecha input {
+        height: 50px;
+        margin-left: 0;
+        border: none;
+        width: 50%;
+        padding: 0 10px;
+        font-family: "Poppins";
+        border: 2px solid #17202A;
+        color: #17202A;
+    }
+
+    .cuadrados1y2 {
+        display: block;
+        margin: auto;
+    }
+
+    .cuadrados {
+        display: block;
+    }
+    /* Cuadrado 1 */
+    
+    .cuadrado1 {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .cuadrado1 p {
+        margin-top: 0px;
+    }
+    
+    .cuadrado1 h3 {
+        margin: 20px 0;
+    }
+
+    .retirar-enviar {
+        margin-top: 0px;
+    }
+    
+    /* Cuadrado 2*/
+    .cuadrado2 {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 70%;
+        padding: 30px;
+        height: auto;
+
+    }
+
+    .cuadrado2 .titulo-tarjetas {
+        margin-top:  0%;
+    }
+
+    .titulo-tarjetas{
+        color: white;
+        font-family: "Rubik";
+        font-size: 21px;
+        text-decoration: underline;
+    }
+
+    
+    .datos_tarjeta {
+        width: 100%;
+        margin-top: 17px;
+    }
+
+    .datos_tarjeta p {
+        font-size: 17px;
+    }
+
+
+    .cuadrado4 {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .cuadrado4 .titulo-estadisticas {
+        margin-top: 0px;
+    }
+    .graficos {
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    .parte_abajo{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 105vh;
+    }
+
+    /* CUADRADO 5 */
+
+    .cuadrado5 {
+        width: 70%;
+        margin: auto;
+        height: auto;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .cuadrado5 .titulo-transaccion {
+        margin-top: 0px;
+    }
+    
+    
+    .transacciones {
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+    
+    
+}

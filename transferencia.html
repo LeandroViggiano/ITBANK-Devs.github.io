@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;600;700&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd84ec097a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="panel-inicio.css">
+    <link rel="stylesheet" href="transferencia.css">
 </head>
 <body>
     <div class="container">
@@ -26,7 +26,8 @@
                 
                 <nav class="navegacion">
                     <div class="fotos">
-                        <p>ITBANK</p>
+                        <h3>ITBank</h3>
+
                         <div class="usuario">
                             <img src="messi.jpg" alt="">
                             <h4>Lionel Messi</h4>
@@ -48,7 +49,7 @@
                             <div class="opcion">
                                 <div class="conjunto">
                                     <i class="fa-solid fa-user"></i>
-                                <li><a href="ajustes-cuenta.html">Ajustes de cuenta</a></li>
+                                <li><a href="">Ajustes de cuenta</a></li>
                                 </div>
                                 
                             </div>
@@ -56,7 +57,7 @@
                             <div class="opcion">
                                 <div class="conjunto">
                                     <i class="fa-solid fa-rocket"></i>
-                                <li><a href="transferencia.html">Transferencias</a></li>
+                                <li><a href="">Transferencias</a></li>
                                 </div>
                                 
                             </div>
@@ -91,95 +92,66 @@
                     </div>
                 </nav>
             </div>
-
             <div class="derecha">
-
-                <div class="header_derecha">
-                    <p class="titulo">Panel de Inicio</p>
-
-                    <input type="search" name="buscador" id="buscador" placeholder="Buscar Servicios">
-
-                </div>
-
-                <hr>
-
-                <div class="carousel">
-                    <i class="fa-solid fa-angle-left"></i>
-                    <img src="/Dashboard/¿TODAVIA NO PEDISTE LA NUEVA TARJETA ITABANK GOLD.png" alt="" id="imagen1">
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-
-                <div class="carousel-mobile">
-                    <img src="/Dashboard/Diseño sin título.png" alt="" id="imagen1">
-                </div>
-                <div class="tus_saldos">
-                    <p class="title">Tu Saldo</p>
-
-                    <div class="saldos">
+                <div class="cuadrado1">
+                    <p>Transferencia</p>
+                    <h3>Su saldo disponible es de:</h3>
+                    <h3>2367.48$</h3>
+                    <div class="centro">
+                        <input type="text" placeholder="Inserte CVU/CBU/Alias">
                         
-                        <div class="saldo">
-                            <div class="textos_saldos">
-                                <p>Cuenta Corriente en Pesos:</p>
-
-                                <h3>$24.565</h3>
-                            </div>
-                            
-                        </div>
-
-                        <div class="saldo">
-                            <div class="textos_saldos">
-                                <p>Cuenta de Ahorro en Pesos:</p>
-
-                            <h3>$7.346</h3>
-                            </div>
-                            
-                        </div>
-
-                        <div class="saldo">
-                            <div class="textos_saldos">
-                                <p>Cuenta de Ahorro en Dolares:</p>
-
-                            <h3>$0.00</h3>
-                            </div>
-                            
-                        </div>
                     </div>
-                </div>
-                <div class="tus_tarjetas">
-                    <p class="title">Tus Tarjetas</p>
-
-                    <div class="tarjetas">
-                        <div class="tarjeta">
-                            <img src="/Dashboard/tarjeta1.png" alt="">
-                        </div>
-    
-                        <div class="tarjeta">
-                            <img src="/Dashboard/tarjeta3.png">
-                        </div>
-
-                        <div class="tarjeta">
-                            <img src="/Dashboard/1653015966439.png" alt="">
-                        </div>
-
-                        <div class="tarjeta">
-                            <img src="/Dashboard/tarjeta2.png" alt="">
-                        </div>
-
-                        <div class="nueva_tarjeta">
-                            <i class="fa-solid fa-circle-plus"></i>
-    
-                            <p>Agregar nueva tarjeta</p>
-                        </div>
+                    <div class="centro">
+                        <input type="text" placeholder="Inserte el dinero a tranferir">   
                     </div>
+                    <div class="centro"><input type="button" value="Confirmar el pago"></div>
+                    </div>
+                
+                    <div class="cuadrado5">
+                    <p class="titulo-transaccion">Ultimas Transacciones</p>
 
+                    <div class="transacciones">
+                        <div class="transaccion">
+                            <p><span class="resta">- $3000</span> - Miguel Lopez</p>
+                        </div>
+
+
+                        <div class="transaccion">
+                            
+                            <p><span class="suma">+ $7000</span> - Lautaro Gimenez</p>
+                        </div>
+
+                        <div class="transaccion">
+                            <p><span class="suma">+ $1000</span> - Victor Santos</p>
+                        </div>
+
+                        <div class="transaccion">
+                            <p><span class="resta">- $3000</span> - Miguel Lopez</p>
+                        </div>
+
+                        <div class="transaccion">
+                            <p><span class="resta">- $8000</span> - Valentino Giannico</p>
+                        </div>
+
+                        <div class="transaccion">
+                            <p><span class="suma">+ $1000</span> - Victor Santos</p>
+                        </div>
+
+                        <div class="transaccion">
+                            <p><span class="resta">- $3000</span> - Miguel Lopez</p>
+                        </div>
+
+                        <div class="transaccion">
+                            <p><span class="resta">- $8000</span> - Valentino Giannico</p>
+                        </div>
                     
+                    </div>
                 </div>
-                
-                
             </div>
         </div>
+        
     </div>
 
-    <script src="panel-inicio.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
