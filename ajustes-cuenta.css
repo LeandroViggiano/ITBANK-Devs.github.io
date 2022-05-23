@@ -22,13 +22,13 @@ body {
 }
 /*Menú desplegable*/
 .izquierda {
-  width: 30vw;
+  width: 20%;
   height: 130vh;
   background: linear-gradient(to right, #020a2d, #055380);
 }
 /*Contenedor de todo excepto el menú desplegable*/
 .derecha {
-  width: 80vw;
+  width: 80%;
   height: 130vh;
   background-color: rgba(2, 2, 2, 0.384);
   display: flex;
