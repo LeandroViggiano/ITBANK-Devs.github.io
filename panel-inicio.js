@@ -1,3 +1,13 @@
+/* DOM */
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        const fondo = document.querySelector(".fondo-dom").style.setProperty("display", "none")    
+    }, 3000);
+    
+})
+
+/* MENU HAMBURGUESA */
 const hamburger = document.getElementById("menu");
 const panel = document.querySelector(".izquierda");
 
