@@ -6,6 +6,18 @@ hamburger.addEventListener("click", (e) => {
     hamburger.classList.toggle("block")
 })
 
+/* APP MOBIL */
+
+if(navigator.userAgent.match(/android/i)){
+    const alerta = document.querySelector(".mensaje-app").style.setProperty("display", "block")
+    const mensaje = document.querySelector(".app").textContent= "¡Descargá nuestra app en la Play Store!"
+} 
+
+if(navigator.userAgent.match(/iphone | ipad/i)) {
+    const alerta = document.querySelector(".mensaje-app").style.setProperty("display", "block")
+    const mensaje = document.querySelector(".app").textContent= "¡Descargá nuestra app en la App Store!"
+}
+
 /* CAROUSEL */
 const imagen = document.getElementById("imagen1");
 
