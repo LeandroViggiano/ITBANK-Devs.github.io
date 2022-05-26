@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const fondo = document.querySelector(".fondo-dom").style.setProperty("display", "none")    
-    }, 3000);
+    }, 4000);
     
 })
 
