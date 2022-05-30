@@ -1,11 +1,11 @@
 /* DOM */
 
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const fondo = document.querySelector(".fondo-dom").style.setProperty("display", "none")    
     }, 4000);
     
-})
+})*/
 
 /* MENU HAMBURGUESA */
 const hamburger = document.getElementById("menu");
