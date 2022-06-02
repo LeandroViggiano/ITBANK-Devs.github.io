@@ -48,3 +48,47 @@ document.addEventListener("click", (e) => {
         }
     }
 })
+
+/* AÑADIR NUEVA TARJETA */
+
+const añadirTarjeta = document.querySelector(".nueva_tarjeta")
+
+document.addEventListener("click", (e) => {
+
+    // Boton +
+    if(e.target.matches(".nueva_tarjeta i")){
+        document.querySelector(".crearTarjetas").style.display = "flex"
+
+        document.querySelector(".derecha").style.opacity = ".3"
+    }
+
+    // Cerrar pestaña X
+    if(e.target.matches(".cerrar i")){
+        document.querySelector(".crearTarjetas").style.display = "none"
+
+        document.querySelector(".derecha").style.opacity = "1"
+    }
+
+    // Enviar
+
+    if(e.target.matches("#enviar")){
+
+        // crear elementos y insertarlos en el html
+        const divTarjeta = document.createElement("div");
+        divTarjeta.setAttribute("class","tarjeta")
+
+        const imagen = document.createElement("img")
+        imagen.setAttribute("src", "tarjeta1.png")
+
+        const divNuevaTarjeta=document.querySelector(".nueva_tarjeta")
+        divNuevaTarjeta.insertAdjacentElement("beforebegin" ,divTarjeta)
+        divTarjeta.appendChild(imagen)
+
+
+        // cerrar ventana
+        document.querySelector(".crearTarjetas").style.display = "none"
+
+        document.querySelector(".derecha").style.opacity = "1"
+    }
+   
+})
