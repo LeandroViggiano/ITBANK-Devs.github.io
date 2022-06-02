@@ -665,10 +665,13 @@ to {
         font-family: "Poppins";
         border: 2px solid #17202A;
         color: #17202A;
-        margin-left: 10%;
-        margin-right: 10%;
     }
     
+    .opciones-buscador {
+        position: fixed;
+        right: 0;
+        width: 50%;
+    }
     
     .main {
         display: block;
@@ -1021,6 +1024,13 @@ to {
         width: 200px;
         display: flex;
         margin: auto;
+    }
+
+    
+    .opciones-buscador {
+        position: fixed;
+        right: 0;
+        width: 100%;
     }
    
     /*  SALDO */
