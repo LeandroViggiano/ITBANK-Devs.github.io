@@ -416,6 +416,7 @@ to {
     height: auto;
     text-align: center;
     margin:10px;
+    margin-top: 25px;
 }
 
 .nueva_tarjeta i {
@@ -503,7 +504,7 @@ to {
 }
 
 .numero {
-    width: 60%;
+    width: 65%;
     height: 70%;
     margin-left: 8%;
     text-align: left;
