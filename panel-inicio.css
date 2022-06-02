@@ -234,7 +234,7 @@ to {
 }
 
 .opciones-buscador {
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 40%;
 }
