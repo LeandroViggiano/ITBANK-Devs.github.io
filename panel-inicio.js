@@ -69,11 +69,17 @@ document.addEventListener("click", (e) => {
         document.querySelector(".derecha").style.opacity = "1"
     }
 
-    // Enviar
+   
+})
 
-    if(e.target.matches("#enviar")){
+const formularioTarjeta = document.getElementById("formularioTarjeta")
+const valoresNumero = document.querySelector(".numero"),
+valoresNombre = document.querySelector(".nombreUsuario")
 
-        // crear elementos y insertarlos en el html
+formularioTarjeta.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+     /* // crear elementos y insertarlos en el html
         const divTarjeta = document.createElement("div");
         divTarjeta.setAttribute("class","tarjeta")
 
@@ -83,12 +89,75 @@ document.addEventListener("click", (e) => {
         const divNuevaTarjeta=document.querySelector(".nueva_tarjeta")
         divNuevaTarjeta.insertAdjacentElement("beforebegin" ,divTarjeta)
         divTarjeta.appendChild(imagen)
-
+        */
 
         // cerrar ventana
         document.querySelector(".crearTarjetas").style.display = "none"
 
         document.querySelector(".derecha").style.opacity = "1"
-    }
-   
+
+        // Crear una tarjeta: todos los elementos
+
+        /* Div padre */
+        const divPadre = document.createElement("div");
+        divPadre.setAttribute("class", "tarjeta")
+
+        const divNuevaTarjeta=document.querySelector(".nueva_tarjeta")
+        divNuevaTarjeta.insertAdjacentElement("beforebegin" ,divPadre)
+        /* Divs hijos */
+
+        // Primer div: Logo
+        const logo = document.createElement("div")
+        logo.setAttribute("class","logo")
+        divPadre.appendChild(logo)
+
+        const conjuntoLogo = document.createElement("div");
+        conjuntoLogo.setAttribute("class","conjunto-logo");
+        logo.appendChild(conjuntoLogo)
+
+        const chip = document.createElement("img")
+        chip.setAttribute("src","chip.png")
+        conjuntoLogo.appendChild(chip)
+
+        const pItbank = document.createElement("p")
+        pItbank.textContent = "ITBANK"
+        conjuntoLogo.appendChild(pItbank)
+
+
+        // Segundo div: Numero Tarjeta
+
+        const numeroTarjeta = document.createElement("div")
+        numeroTarjeta.setAttribute("class","numeroTarjeta")
+        divPadre.appendChild(numeroTarjeta)
+
+        const resultadoNumero = document.createElement("p")
+        resultadoNumero.setAttribute("class","numero")
+        resultadoNumero.textContent = valoresNumero.value
+        numeroTarjeta.appendChild(resultadoNumero)
+
+        // Tercer div: nombre y visa
+
+        const conjuntoNombreVisa = document.createElement("div")
+        conjuntoNombreVisa.setAttribute("class","conjunto-NombreVisa")
+        divPadre.appendChild(conjuntoNombreVisa)
+
+        const nombre = document.createElement("div")
+        nombre.setAttribute("class","nombre")
+        conjuntoNombreVisa.appendChild(nombre)
+
+        const resultadoNombre = document.createElement("p")
+        resultadoNombre.setAttribute("class","nombreUsuario")
+        resultadoNombre.textContent = valoresNombre.value
+        nombre.appendChild(resultadoNombre)
+
+        const visa = document.createElement("div")
+        visa.setAttribute("class","visa")
+        conjuntoNombreVisa.appendChild(visa)
+        const logoVisa = document.createElement("i")
+        logoVisa.setAttribute("class","fa-brands fa-cc-visa")
+        visa.appendChild(logoVisa)
+
+
+        
+        formularioTarjeta.reset();
 })
