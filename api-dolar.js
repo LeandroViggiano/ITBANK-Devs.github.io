@@ -8,11 +8,11 @@ function api() {
     fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
     .then(data => data.json())
     .then(data => {
-        oficial.innerHTML = ` <b>${data[0].casa.nombre}</b> <br> Compra: ${data[0].casa.compra} Venta: ${data[0].casa.compra}`
+        oficial.innerHTML = ` <b>${data[0].casa.nombre}</b><br> Compra: ${data[0].casa.compra} | Venta: ${data[0].casa.compra}`
 
-        blue.innerHTML = ` <b>${data[1].casa.nombre}</b>  <br> Compra: ${data[1].casa.compra}  Venta: ${data[1].casa.compra}`
+        blue.innerHTML = ` <b>${data[1].casa.nombre}</b><br> Compra: ${data[1].casa.compra} | Venta: ${data[1].casa.compra}`
 
-        contado.innerHTML = ` <b>${data[3].casa.nombre}</b> <br> Compra: ${data[3].casa.compra}  Venta: ${data[3].casa.compra}`
+        contado.innerHTML = ` <b>${data[3].casa.nombre}</b><br> Compra: ${data[3].casa.compra} | Venta: ${data[3].casa.compra}`
     })  
 
 

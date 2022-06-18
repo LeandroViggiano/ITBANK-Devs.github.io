@@ -206,7 +206,7 @@ to {
 }
 
 .titulo-seccion {
-    width: 27%;
+    width: 33%;
     display: flex;
     justify-content: center;
 }
@@ -229,6 +229,7 @@ to {
 .logo-itbank{
     width: 33%;
     text-align: center;
+
 }
 
 .logo-itbank img {
@@ -256,6 +257,7 @@ input:focus
 
 .boton-buscador {
     width: 33%;
+    
 }
 
 .header_derecha span {
@@ -354,25 +356,29 @@ input:focus
     width: auto;
     background-color: #7d8da1;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .dolares p {
-    margin: auto 35px;
+    margin: auto 20px;
     color: black;
     font-family: 'Rubik';
     font-weight: 300;
     font-size: 14px;
     text-align: center;
+    width: 25%;
 }
 
 .dolares a {
     text-decoration: none;
     color: white;
+}
+
+.convertor {
+    border-radius: 10px;
     background-color: #041434;
     border: 2px solid #041434;
-    border-radius: 10px;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 
@@ -460,6 +466,7 @@ input:focus
     justify-content: left;
     margin-top: 10px;
     flex-wrap: wrap;
+
 }
 
 .tarjeta:hover {
@@ -474,7 +481,7 @@ input:focus
     width: 300px;
     height: auto;
     text-align: center;
-    margin:10px;
+    margin:0px;
     margin-top: 25px;
 }
 
@@ -835,22 +842,24 @@ input:focus
         align-items: center;
         text-align: left;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         height: auto;
         padding: 40px 0;
     }
 
     .tus_tarjetas .title {
-        margin-left: 5%;
+        margin-left: 2%;
     }
 
     .tarjetas {
         margin: auto;
         text-align: center;
-        justify-content: center;
+        justify-content: left;
+        margin-left: 0%;
     }
     .tarjeta {
-        width: 320px;
+        width: 300px;
+        margin: 10px;
     }
 }
 
