@@ -15,6 +15,9 @@ document.addEventListener("keyup", (e) => {
             }
         })
 
+        const buscador = document.querySelector("#buscador")
+        buscador.classList.toggle("cambiarInput")
+
 
     }
 })

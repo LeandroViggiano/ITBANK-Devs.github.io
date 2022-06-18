@@ -206,7 +206,7 @@ to {
 }
 
 .titulo-seccion {
-    width: 33%;
+    width: 27%;
     display: flex;
     justify-content: center;
 }
@@ -222,8 +222,6 @@ to {
     padding: 15px;
     border: 2px solid #17202A;
     border-left: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     background-color: white;
 
 }
@@ -250,8 +248,6 @@ input:focus
     font-family: "Poppins";
     border: 2px solid #17202A;
     border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     color: #17202A;
     width: 200px;
     display: flex;
@@ -269,11 +265,11 @@ input:focus
 .opciones-buscador {
     position: absolute;
     right: 0;
-    width: 50%;
+    width: 27%;
 }
 
 .lista-opciones {
-    width: 200px;
+    width: 240px;
     margin: auto;
     text-align: center;
 }
@@ -355,7 +351,7 @@ input:focus
 
 .dolares{
     display: flex;
-    width: 100%;
+    width: auto;
     background-color: #7d8da1;
     justify-content: center;
     padding: 10px;
@@ -368,7 +364,6 @@ input:focus
     font-weight: 300;
     font-size: 14px;
     text-align: center;
-    
 }
 
 .dolares a {
