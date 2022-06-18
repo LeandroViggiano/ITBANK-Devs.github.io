@@ -33,7 +33,7 @@
                 
                 <nav class="navegacion">
                     <div class="fotos">
-                        <p>ITBANK</p>
+                    
                         <div class="usuario">
                             <img src="messi.jpg" alt="">
                             <h4>Lionel Messi</h4>
@@ -55,7 +55,7 @@
                             <div class="opcion">
                                 <div class="conjunto">
                                     <i class="fa-solid fa-user"></i>
-                                <li><a href="ajustes-cuenta.html">Ajustes de cuenta</a></li>
+                                <li><a href="ajustes-cuenta.html">Configuracion</a></li>
                                 </div>
                                 
                             </div>
@@ -105,10 +105,16 @@
                     <div class="titulo-seccion">
                         <p class="titulo">Panel de Inicio</p>
                     </div>
+                    <div class="logo-itbank">
+                        <img src="ITBANK LOGO.png" alt="" class="logo-itbank">
 
+                    </div>
                     <div class="boton-buscador">
-                        <input type="search" name="buscador" id="buscador" placeholder="Buscar Servicios">
-
+                        <div class="barra-busqueda">
+                            <input type="search" name="buscador" id="buscador" placeholder="Buscar Servicios">
+                            <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                        </div>
+                        
                         <div class="opciones-buscador">
                             <ul class="lista-opciones">
                                 <li class="opcion-buscador"><a href="">Servicios</a></li>
@@ -124,15 +130,22 @@
                 </div>
 
                 <hr>
-
+                <!--
                 <div class="carousel">
                     <i class="fa-solid fa-angle-left" id="izquierda"></i>
                     <img src="¿TODAVIA NO PEDISTE LA NUEVA TARJETA ITABANK GOLD.png" alt="" id="imagen1">
                     <i class="fa-solid fa-angle-right" id="derecha"></i>
                 </div>
-
+                -->
                 <div class="carousel-mobile">
                     <img src="Diseño sin título.png" alt="" id="imagen1">
+                </div>
+
+                <div class="dolares">
+                    <p class="oficial"></p>
+                    <p class="blue"></p>
+                    <p class="contado"></p>
+                    <p><a href="">Convertor de moneda</a></p>
                 </div>
                 <div class="tus_saldos">
                     <p class="title">Tu Saldo</p>
@@ -230,6 +243,7 @@
         </div>
     </div>
 
+    <script src="api-dolar.js"></script>
     <script src="buscador.js"></script>
     <script src="panel-inicio.js"></script>
 </body>
