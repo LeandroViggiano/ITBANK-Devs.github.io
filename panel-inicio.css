@@ -194,7 +194,6 @@ to {
     height: 100px;
     width: 100%;
     justify-content: center;
-
 }
 
 .header_derecha .titulo {
@@ -206,7 +205,7 @@ to {
 }
 
 .titulo-seccion {
-    width: 33%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -228,12 +227,17 @@ to {
 
 .logo-itbank{
     width: 33%;
+    height: 100px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .logo-itbank img {
-    width: 130px;
+    width: 150px;
+    height: 100px;
+    margin: auto;
 }
 
 input:focus
@@ -256,7 +260,7 @@ input:focus
 }
 
 .boton-buscador {
-    width: 33%;
+    width: 50%;
     
 }
 
@@ -267,7 +271,7 @@ input:focus
 .opciones-buscador {
     position: absolute;
     right: 0;
-    width: 27%;
+    width: 30%;
 }
 
 .lista-opciones {
@@ -361,7 +365,6 @@ input:focus
 
 .dolares p {
     margin: auto 60px;
-    color: white;
     font-family: 'Rubik';
     font-weight: 300;
     font-size: 14px;
@@ -373,7 +376,8 @@ input:focus
 .convertor {
     border-radius: 10px;
     background-color: #041434;
-    padding: 5px 0;
+    padding: 5px;
+    color: white;
 }
 
 
@@ -383,6 +387,7 @@ input:focus
     width: 100%;
     height: 100vh;
     position: fixed;
+    z-index: 1;
     top: 0%;
     right: 0;
     display: none;
@@ -548,7 +553,6 @@ input:focus
 }
   
 .cambio .help-tip p {
-    /* The tooltip */
     display: none;
     text-align: left;
     background-color: #1e2021;
@@ -948,10 +952,15 @@ input:focus
         font-family: "Rubik";
         font-size: 22px;
         text-transform: uppercase;
-        margin-right: 10%;
-        margin-left: 10%;
+    }
+
+    .titulo-seccion {
+        width: 100%;
     }
     
+    .boton-buscador {
+        width: 100%;
+    }
     .header_derecha input {
         height: 50px;
         border: none;
@@ -962,9 +971,13 @@ input:focus
     }
     
     .opciones-buscador {
-        position: fixed;
+        position: absolute;
         right: 0;
-        width: 50%;
+        width: 42.5%;
+    }
+
+    .opcion-buscador {
+        width: 170px;
     }
     
     .main {
@@ -1280,6 +1293,10 @@ input:focus
 
     /* HEADER DERECHA */
 
+    .dolares {
+        display: none;
+    }
+
     .header_derecha {
         display: block;
         align-items: center;
@@ -1304,11 +1321,12 @@ input:focus
         display: flex;
         justify-content: center;
         text-align: center;
+        align-items: center;
+        margin: auto;
     }
 
     .boton-buscador {
         width: 100%;
-        margin-top: 20px;
     }
     
     .header_derecha input {
@@ -1320,7 +1338,6 @@ input:focus
         color: #17202A;
         width: 200px;
         display: flex;
-        margin: auto;
     }
 
     
@@ -1330,6 +1347,10 @@ input:focus
         width: 100%;
     }
    
+    .cambio {
+        width: 60%;
+    }
+
     /*  SALDO */
     .tus_saldos .title {
         font-size: 23px;
