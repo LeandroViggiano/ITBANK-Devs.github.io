@@ -1,91 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name=""viewport" content="width=device-width, initial-scale=1">
-<title> Turnos Online </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500&family=Vollkorn:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;600;700&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd84ec097a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <div class="izquierda">
+    <div class="container">
+        <div class="main">
+
+            <div class="menu-responsive">
+                <i class="fa-solid fa-bars" id="menu"></i>
+            </div>
+            
+            <div class="izquierda">
                 
-        <nav class="navegacion">
-            <div class="fotos">
-                <p>ITBANK</p>
-                <div class="usuario">
-                    <img src="messi.jpg" alt="">
-                    <h4>Lionel Messi</h4>
+                <nav class="navegacion">
+                    <div class="fotos">
+                        <p>ITBANK</p>
+                        <div class="usuario">
+                            <img src="messi.jpg" alt="">
+                            <h4>Lionel Messi</h4>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="opciones">
+                        <ul class="lista">
+                            <div class="opcion">
+                                <div class="conjunto">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                <li><a href="">Panel de Inicio</a></li>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="opcion">
+                                <div class="conjunto">
+                                    <i class="fa-solid fa-user"></i>
+                                <li><a href="">Ajustes de cuenta</a></li>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="opcion">
+                                <div class="conjunto">
+                                    <i class="fa-solid fa-rocket"></i>
+                                <li><a href="">Transferencias</a></li>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="opcion">
+                                <div class="conjunto">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                <li><a href="">Historial</a></li>
+                                </div>
+                            </div>
+                            
+                            <div class="opcion">
+                                <div class="conjunto">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                <li><a href="">Servicios</a></li>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="opcion">
+                                <div class="conjunto">
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                <li><a href="">Turnos Online</a></li>
+                                </div>
+                                
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="cerrar-sesion">
+                        <p>Sign out</p>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="derecha">
+
+                <div class="header_derecha">
+                    <p class="titulo">Panel de Inicio</p>
+
+                    <input type="search" name="buscador" id="buscador" placeholder="Buscar Servicios">
+
 
                 </div>
+
+                <hr>
+                <div class="carousel-mobile">
+                    <img src="/Dashboard/Diseño sin título.png" alt="" id="imagen1">
+                </div>
+                <div class="tus_saldos">
+                    <h6 align="center"> Turnos Online </h6>
+
+                    <h1 class="first sentence" align="center"> <b>Podés solicitar tu turno completando el siguiente formulario. </b> </h1>
+
+                    <h2 align="center">Es muy importante que completes tu dirección de e-mail que podamos enviarte el comprobante del turno. Recordá revisar tu casilla y confirmar el turno cuando recibas nuestro correo electrónico. </h2>
+
+                    <h3 align="center"> Consigná el motivo de tu visita correctamente para evitar situaciones que afecten las medidas de distanciamiento social. </h3>
+                    
+                    <input type="info" name="DNI" id="DNI" placeholder="DNI">
+                
+
+                    <input type="info" name="CUIL/CUIT" id="CUIL/CUIT" placeholder="CUIL/CUIT">
+
+                    <input type="info" name="Nombre" id="Nombre" placeholder="Nombre">
+
+                    <input type="info" name="Apellido" id="Apellido" placeholder="Apellido">
+
+                    <input type="info" name="E-mail" id="E-mail" placeholder="E-mail">
+
+                    <input type="info" name="Telefono" id="Telefono" placeholder="Telefono">
+
+
+                
+                        
+        
+                            
+                        </div>
+
+                        
+
+                    
+                </div>
+                
                 
             </div>
-
-            <div class="opciones">
-                <ul class="lista">
-                    <div class="opcion">
-                        <div class="conjunto">
-                            <i class="fa-solid fa-chart-line"></i>
-                        <li><a href="">Panel de Inicio</a></li>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="opcion">
-                        <div class="conjunto">
-                            <i class="fa-solid fa-user"></i>
-                        <li><a href="">Ajustes de cuenta</a></li>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="opcion">
-                        <div class="conjunto">
-                            <i class="fa-solid fa-rocket"></i>
-                        <li><a href="">Transferencias</a></li>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="opcion">
-                        <div class="conjunto">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <li><a href="">Historial</a></li>
-                        </div>
-                    </div>
-                    
-                    <div class="opcion">
-                        <div class="conjunto">
-                            <i class="fa-solid fa-credit-card"></i>
-                        <li><a href="">Servicios</a></li>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="opcion">
-                        <div class="conjunto">
-                            <i class="fa-solid fa-circle-arrow-right"></i>
-                        <li><a href="">Turnos Online</a></li>
-                        </div>
-                        
-                    </div>
-                </ul>
-            </div>
-
-            <div class="cerrar-sesion">
-                <p>Sign out</p>
-            </div>
-        </nav>
+        </div>
     </div>
 
-    <div class="derecha">
-        
-    <h1> <b> Podés solicitar tu turno completando el siguiente formulario. </h1> </b>
-    <h2> <b> Es muy importante que completes tu dirección de e-mail </b> para que podamos enviarte el comprobante del turno. Recordá revisar tu casilla y <b> confirmar el turno </b> cuando recibas nuestro correo electrónico. </h2>
-    <h3> Consigná el motivo de tu visita correctamente para evitar situaciones que afecten las medidas de distanciamiento social.</h3>
-    <h4> <b> No olvides que sólo podrás presentarte – en el día y horario en la sucursal indicada – con la constancia de turno emitida por ITbank. </b></h4>
-    </div>
-
-
+    <script src="main.js"></script>
 </body>
 </html>
