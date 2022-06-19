@@ -360,26 +360,254 @@ input:focus
 }
 
 .dolares p {
-    margin: auto 20px;
-    color: black;
+    margin: auto 60px;
+    color: white;
     font-family: 'Rubik';
     font-weight: 300;
     font-size: 14px;
     text-align: center;
-    width: 25%;
+    width: 20%;
 }
 
-.dolares a {
-    text-decoration: none;
-    color: white;
-}
 
 .convertor {
     border-radius: 10px;
     background-color: #041434;
-    border: 2px solid #041434;
     padding: 5px 0;
 }
+
+
+/* CONVERSOR DE MONEDA */
+.conversor{
+    background-color: rgb(0, 0, 0, .2);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    display: none;
+
+}
+.abrirConversor {
+    display: block;
+}
+.cerrarConversor{
+    display: none;
+}
+
+.cambio {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    margin: auto;
+    background-color: #17202A;
+    border-radius: 20px;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    font-family: 'Ubuntu';
+}
+
+.cambio header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.cambio form {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    
+}
+.cambio form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+.cambio form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.cambio form input {
+    width: 90%;
+    height: 50px;
+    font-size: 17px;
+    padding: 5px;
+}
+.cambio form input:focus {
+    border: 2px solid #675afe;
+}
+.cambio form .drop-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.cambio .drop-list .select-box {
+    display: flex;
+    width: auto;
+    padding: 5px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #999;
+    margin: 0 35px;
+}
+.cambio .select-box img {
+    max-width: 21px;
+}
+.cambio .select-box select {
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+}
+.cambio .select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cambio .select-box select::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+.cambio .select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.cambio .drop-list .icon {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.cambio form .exchange-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+  
+.cambio form button {
+    width: 90%;
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #675afe;
+    transition: 0.3s ease;
+}
+  
+.cambio form button:hover {
+    background: #4534fe;
+}
+  
+/* CERRAR */
+
+.cerrar {
+    position: relative;
+    margin-top: -45px;
+    margin-left: 96%;
+}
+
+.cerrar p {
+    width: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+  /* HELP ME CSS */
+/*.cambio .help-tip {
+    margin: auto;
+    margin-right: -10px;
+    margin-top: -32.5px;
+    position: relative;
+    text-align: center;
+    background-color: #675afe;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+  
+.cambio .help-tip:before {
+    content: "?";
+    font-weight: bold;
+    color: #fff;
+}
+  
+.cambio .help-tip:hover p {
+    display: block;
+    transform-origin: 100% 0%;
+  
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+}
+  
+.cambio .help-tip p {
+    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1e2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+}
+  
+.cambio .help-tip p:before {
+    /* The pointer of the tooltip */
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #1e2021;
+    right: 10px;
+    top: -12px;
+}
+  
+.cambio .help-tip p:after {
+    /* Prevents the tooltip from being hidden */
+    width: 100%;
+    height: 40px;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+}*/
+  
+  /* CSS animation */
+  
+@-webkit-keyframes fadeIn {
+0% {
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+100% {
+    opacity: 100%;
+    transform: scale(1);
+}
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 100%;
+}
+}
+
 
 
 /* SALDOS */
