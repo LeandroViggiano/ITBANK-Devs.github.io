@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="ajustes-cuenta.css">
+    <link rel="stylesheet" href="ajustes-cuenta.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
       rel="stylesheet"
@@ -33,241 +33,269 @@
   </head>
 
   <body>
-    <div class="main">
-      <div class="menu-responsive">
-        <a href=""><i class="fa-solid fa-bars" id="menu"></i></a>
-      </div>
-      <!--menu desplegable-->
-      <div class="izquierda">
-        <nav class="navegacion">
-          <div class="fotos">
-            <h3>ITBank</h3>
-
-            <div class="usuario">
-              <img src="messi.jpg" alt="" />
-              <h4>Lionel Messi</h4>
-            </div>
-          </div>
-
-          <div class="opciones">
-            <ul class="lista">
-              <div class="opcion">
-                <div class="conjunto">
-                  <i class="fa-solid fa-chart-line"></i>
-                  <li><a href="panel-inicio.html">Panel de Inicio</a></li>
-                </div>
-              </div>
-
-              <div class="opcion">
-                <div class="conjunto">
-                  <i class="fa-solid fa-user"></i>
-                  <li><a href="ajustes-cuenta.html">Ajustes de cuenta</a></li>
-                </div>
-              </div>
-
-              <div class="opcion">
-                <div class="conjunto">
-                  <i class="fa-solid fa-rocket"></i>
-                  <li><a href="transferencia.html">Transferencias</a></li>
-                </div>
-              </div>
-
-              <div class="opcion">
-                <div class="conjunto">
-                  <i class="fa-solid fa-arrows-rotate"></i>
-                  <li><a href="">Historial</a></li>
-                </div>
-              </div>
-
-              <div class="opcion">
-                <div class="conjunto">
-                  <i class="fa-solid fa-credit-card"></i>
-                  <li><a href="">Servicios</a></li>
-                </div>
-              </div>
-
-              <div class="opcion">
-                <div class="conjunto">
-                  <i class="fa-solid fa-circle-arrow-right"></i>
-                  <li><a href="">Turnos Online</a></li>
-                </div>
-              </div>
-            </ul>
-          </div>
-
-          <div class="cerrar-sesion">
-            <p>Sign out</p>
-          </div>
-        </nav>
-      </div>
-      <!--Fin del menu desplegable-->
-      <div class="derecha">
-        <div class="navegacio">
-          <div>
-            <h2 class="subtitulo">TU PERFIL</h2>
-          </div>
-          <div class="buscando">
-            <input type="text" placeholder="Opción especifica" />
-            <i class="fa-solid fa-magnifying-glass-dollar"></i>
-          </div>
+    <div class="container">
+      <div class="main">
+        <div class="menu-responsive">
+          <a href=""><i class="fa-solid fa-bars" id="menu"></i></a>
         </div>
-        <div class="contenedor_de_opciones">
-          <div class="nombre">
-            <div class="prueba">
-              <i class="fa-solid fa-user config_icon"></i>
-            </div>
-            <div>
-              <h2 class="subtitulo">Nombre del usuario</h2>
-              <h3 class="subtitulo">Cuenta premium</h3>
-            </div>
-          </div>
-          <div class="opcion_configuracion" id="Tusdatos">
-            <i class="fa-solid fa-address-card config_icon"></i>
-            <div>
-              <h4>Tus datos</h4>
-              <p>Gestioná tus datos personales</p>
-            </div>
-          </div>
-          <div class="texto_oculto">
-            <span class="hide" id="hideTusdatos">
-              <div>
-                <div class="separacion_texto_oculto"><p>Alias:</p></div>
-                <div class="separacion_texto_oculto"><p>CBU:</p></div>
+        <!--menu desplegable-->
+        <div class="izquierda">
+          <nav class="navegacion">
+            <div class="fotos">
+              <h3>ITBank</h3>
 
-                <div class="separacion_texto_oculto"><p>Email:</p></div>
-                <div class="separacion_texto_oculto"><p>Nombre:</p></div>
-                <div class="separacion_texto_oculto"><p>Telefono:</p></div>
-                <div class="separacion_texto_oculto"><p>DNI:</p></div>
+              <div class="usuario">
+                <img src="messi.jpg" alt="" />
+                <h4>Lionel Messi</h4>
               </div>
-            </span>
-          </div>
-          <!---->
-          <div class="opcion_configuracion" id="Seguridad">
-            <div>
-              <i class="fa-solid fa-shield-halved config_icon"></i>
             </div>
-            <div>
-              <h4>Seguridad</h4>
-              <p>Configura tu seguridad</p>
-            </div>
-          </div>
 
-          <div class="texto_oculto">
-            <span class="hide" id="hideSeguridad">
-              <div>
-                <div class="separacion_texto_oculto"><p>Usuario:</p></div>
-                <div class="separacion_texto_oculto"><p>Clave:</p></div>
-                <div class="separacion_texto_oculto"><p>Verificación en dos pasos</p></div>
-                
-                <div class="separacion_texto_oculto">
-                  <p>Dispositivos vinculados</p>
+            <div class="opciones">
+              <ul class="lista">
+                <div class="opcion">
+                  <div class="conjunto">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <li><a href="panel-inicio.html">Panel de Inicio</a></li>
+                  </div>
                 </div>
+
+                <div class="opcion">
+                  <div class="conjunto">
+                    <i class="fa-solid fa-user"></i>
+                    <li><a href="ajustes-cuenta.html">Configuración</a></li>
+                  </div>
+                </div>
+
+                <div class="opcion">
+                  <div class="conjunto">
+                    <i class="fa-solid fa-rocket"></i>
+                    <li><a href="transferencia.html">Transferencias</a></li>
+                  </div>
+                </div>
+
+
+
+                <div class="opcion">
+                  <div class="conjunto">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <li><a href="">Servicios</a></li>
+                  </div>
+                </div>
+
+                <div class="opcion">
+                  <div class="conjunto">
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                    <li><a href="">Turnos Online</a></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <div class="cerrar-sesion">
+              <p>Sign out</p>
+            </div>
+          </nav>
+        </div>
+        <!--Fin del menu desplegable-->
+        <div class="derecha">
+          <div class="header_derecha">
+            <div class="titulo-seccion">
+              <p class="titulo">CONFIGURACIÓN</p>
+            </div>
+            <div class="logo-itbank">
+              <img src="ITBANK LOGO.png" alt="" class="logo-itbank" />
+            </div>
+            <div class="boton-buscador">
+              <div class="barra-busqueda">
+                <input
+                  type="search"
+                  name="buscador"
+                  id="buscador"
+                  placeholder="Buscar Servicios"
+                />
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
               </div>
-            </span>
-          </div>
-          <!---->
-          <div class="opcion_configuracion" id="Tustarjetas">
-            <div><i class="fa-solid fa-credit-card config_icon"></i></div>
-            <div>
-              <h4>Tus tarjetas</h4>
-              <p>Gestioná tus tarjetas</p>
+
+              <div class="opciones-buscador">
+                <ul class="lista-opciones">
+                  <li class="opcion-buscador"><a href="">Servicios</a></li>
+                  <li class="opcion-buscador">
+                    <a href="transferencia.html">Transferencias</a>
+                  </li>
+                  <li class="opcion-buscador">
+                    <a href="ajustes-cuenta.html">Configuracion</a>
+                  </li>
+                  <li class="opcion-buscador"><a href="">Historial</a></li>
+                  <li class="opcion-buscador"><a href="">Turnos Online</a></li>
+                  <li class="opcion-buscador">
+                    <a href="panel-inicio.html">Panel de Inicio</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="texto_oculto">
-            <span class="hide" id="hideTustarjetas">
+
+          <hr />
+          <div class="contenedor_de_opciones">
+            <div class="nombre">
+              <div class="prueba">
+                <i class="fa-solid fa-user config_icon"></i>
+              </div>
               <div>
-                <div class="separacion_texto_oculto"><p>Email:</p></div>
-                <div class="separacion_texto_oculto"><p>Nombre:</p></div>
-                <div class="separacion_texto_oculto"><p>Telefono:</p></div>
-                <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                <h2 class="subtitulo">Nombre del usuario</h2>
+                <h3 class="subtitulo">Cuenta premium</h3>
               </div>
-            </span>
-          </div>
-          <!---->
-          <div class="opcion_configuracion" id="Direcciones">
-            <div>
-              <i class="fa-solid fa-location-dot config_icon"></i>
             </div>
-            <div>
-              <h4>Direcciones</h4>
-              <p>Modificá tus direcciones</p>
-            </div>
-          </div>
-          <div class="texto_oculto">
-            <span class="hide" id="hideDirecciones">
+            <div class="opcion_configuracion" id="Tusdatos">
+              <i class="fa-solid fa-address-card config_icon"></i>
               <div>
-                <div class="separacion_texto_oculto"><p>Email:</p></div>
-                <div class="separacion_texto_oculto"><p>Nombre:</p></div>
-                <div class="separacion_texto_oculto"><p>Telefono:</p></div>
-                <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                <h4>Tus datos</h4>
+                <p>Gestioná tus datos personales</p>
               </div>
-            </span>
-          </div>
-          <!---->
-          <div class="opcion_configuracion" id="Privacidad">
-            <div>
-              <i class="fa-solid fa-user-shield config_icon"></i>
             </div>
-            <div>
-              <h4>Privacidad</h4>
-              <p>Gestioná el uso de tu información personal</p>
+            <div class="texto_oculto">
+              <span class="hide" id="hideTusdatos">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Alias:</p></div>
+                  <div class="separacion_texto_oculto"><p>CBU:</p></div>
+
+                  <div class="separacion_texto_oculto"><p>Email:</p></div>
+                  <div class="separacion_texto_oculto"><p>Nombre:</p></div>
+                  <div class="separacion_texto_oculto"><p>Telefono:</p></div>
+                  <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                </div>
+              </span>
             </div>
-          </div>
-          <div class="texto_oculto">
-            <span class="hide" id="hidePrivacidad">
+            <!---->
+            <div class="opcion_configuracion" id="Seguridad">
               <div>
-                <div class="separacion_texto_oculto"><p>Email:</p></div>
-                <div class="separacion_texto_oculto"><p>Nombre:</p></div>
-                <div class="separacion_texto_oculto"><p>Telefono:</p></div>
-                <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                <i class="fa-solid fa-shield-halved config_icon"></i>
               </div>
-            </span>
-          </div>
-          <!---->
-          <div class="opcion_configuracion" id="Comunicaciones">
-            <div>
-              <i class="fa-solid fa-comment-slash config_icon"></i>
-            </div>
-            <div>
-              <h4>Comunicaciones</h4>
-              <p>Elegí el tipo de información que querés recibir</p>
-            </div>
-          </div>
-          <div class="texto_oculto">
-            <span class="hide" id="hideComunicaciones">
               <div>
-                <div class="separacion_texto_oculto"><p>Email:</p></div>
-                <div class="separacion_texto_oculto"><p>Nombre:</p></div>
-                <div class="separacion_texto_oculto"><p>Telefono:</p></div>
-                <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                <h4>Seguridad</h4>
+                <p>Configura tu seguridad</p>
               </div>
-            </span>
-          </div>
-          <!---->
-          <div class="opcion_configuracion" id="Subscripciones">
-            <div>
-              <i class="fa-solid fa-money-bill-transfer config_icon"></i>
             </div>
-            <div>
-              <h4>Subscripciones</h4>
-              <p>Gestioná tus Subscripciones</p>
+
+            <div class="texto_oculto">
+              <span class="hide" id="hideSeguridad">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Usuario:</p></div>
+                  <div class="separacion_texto_oculto"><p>Clave:</p></div>
+                  <div class="separacion_texto_oculto">
+                    <p>Verificación en dos pasos</p>
+                  </div>
+
+                  <div class="separacion_texto_oculto">
+                    <p>Dispositivos vinculados</p>
+                  </div>
+                </div>
+              </span>
             </div>
-          </div>
-          <div class="texto_oculto">
-            <span class="hide" id="hideSubscripciones">
+            <!---->
+            <div class="opcion_configuracion" id="Tustarjetas">
+              <div><i class="fa-solid fa-credit-card config_icon"></i></div>
               <div>
-                <div class="separacion_texto_oculto"><p>Email:</p></div>
-                <div class="separacion_texto_oculto"><p>Nombre:</p></div>
-                <div class="separacion_texto_oculto"><p>Telefono:</p></div>
-                <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                <h4>Tus tarjetas</h4>
+                <p>Gestioná tus tarjetas</p>
               </div>
-            </span>
+            </div>
+            <div class="texto_oculto">
+              <span class="hide" id="hideTustarjetas">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Email:</p></div>
+                  <div class="separacion_texto_oculto"><p>Nombre:</p></div>
+                  <div class="separacion_texto_oculto"><p>Telefono:</p></div>
+                  <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                </div>
+              </span>
+            </div>
+            <!---->
+            <div class="opcion_configuracion" id="Direcciones">
+              <div>
+                <i class="fa-solid fa-location-dot config_icon"></i>
+              </div>
+              <div>
+                <h4>Direcciones</h4>
+                <p>Modificá tus direcciones</p>
+              </div>
+            </div>
+            <div class="texto_oculto">
+              <span class="hide" id="hideDirecciones">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Email:</p></div>
+                  <div class="separacion_texto_oculto"><p>Nombre:</p></div>
+                  <div class="separacion_texto_oculto"><p>Telefono:</p></div>
+                  <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                </div>
+              </span>
+            </div>
+            <!---->
+            <div class="opcion_configuracion" id="Privacidad">
+              <div>
+                <i class="fa-solid fa-user-shield config_icon"></i>
+              </div>
+              <div>
+                <h4>Privacidad</h4>
+                <p>Gestioná el uso de tu información personal</p>
+              </div>
+            </div>
+            <div class="texto_oculto">
+              <span class="hide" id="hidePrivacidad">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Email:</p></div>
+                  <div class="separacion_texto_oculto"><p>Nombre:</p></div>
+                  <div class="separacion_texto_oculto"><p>Telefono:</p></div>
+                  <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                </div>
+              </span>
+            </div>
+            <!---->
+            <div class="opcion_configuracion" id="Comunicaciones">
+              <div>
+                <i class="fa-solid fa-comment-slash config_icon"></i>
+              </div>
+              <div>
+                <h4>Comunicaciones</h4>
+                <p>Elegí el tipo de información que querés recibir</p>
+              </div>
+            </div>
+            <div class="texto_oculto">
+              <span class="hide" id="hideComunicaciones">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Email:</p></div>
+                  <div class="separacion_texto_oculto"><p>Nombre:</p></div>
+                  <div class="separacion_texto_oculto"><p>Telefono:</p></div>
+                  <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                </div>
+              </span>
+            </div>
+            <!---->
+            <div class="opcion_configuracion" id="Subscripciones">
+              <div>
+                <i class="fa-solid fa-money-bill-transfer config_icon"></i>
+              </div>
+              <div>
+                <h4>Subscripciones</h4>
+                <p>Gestioná tus Subscripciones</p>
+              </div>
+            </div>
+            <div class="texto_oculto">
+              <span class="hide" id="hideSubscripciones">
+                <div>
+                  <div class="separacion_texto_oculto"><p>Email:</p></div>
+                  <div class="separacion_texto_oculto"><p>Nombre:</p></div>
+                  <div class="separacion_texto_oculto"><p>Telefono:</p></div>
+                  <div class="separacion_texto_oculto"><p>DNI:</p></div>
+                </div>
+              </span>
+            </div>
+            <!---->
           </div>
-          <!---->
         </div>
       </div>
     </div>
     <script src="ajustes-cuenta.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="buscador.js"></script>
   </body>
 </html>
