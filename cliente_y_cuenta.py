@@ -19,7 +19,7 @@ class Cliente:
     def puede_crear_tarjeta_credito(self):
         pass
     def puede_comprar_dolar(self):
-        pass
+        pass 
 #Metodos creados 
 
     def __str__(self): #Al mostrar un objeto, se muestra feo, esta linea de codigo hace que se vea más bonito
