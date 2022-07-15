@@ -1,16 +1,10 @@
-#Abriendo el archivo json
-import json
-try:
-    with open('eventos_gold.json' , 'r') as archivo:
-        datos_del_cliente = json.load(archivo)#Guardo todos los datos del Json en la lista datos_del_cliente
-        print("Archivo obtenido con exito")
-except FileNotFoundError as err:
-    print("Archivo no encontrado")
-    quit()
+
+import abriendo_json
+
 #--------------------------------
 import cliente_y_cuenta
 
-cliente_y_cuenta.cliente1 = cliente_y_cuenta.Cliente(cliente_y_cuenta.datos_del_cliente['nombre'], cliente_y_cuenta.datos_del_cliente['apellido'], cliente_y_cuenta.datos_del_cliente['numero'], cliente_y_cuenta.datos_del_cliente['dni'], cliente_y_cuenta.datos_del_cliente['tipo'])
+cliente_y_cuenta.cliente1 = cliente_y_cuenta.Cliente(abriendo_json.datos_del_cliente['nombre'], abriendo_json.datos_del_cliente['apellido'], abriendo_json.datos_del_cliente['numero'], abriendo_json.datos_del_cliente['dni'], abriendo_json.datos_del_cliente['tipo'])
 
 
 import cliente_y_cuenta
@@ -40,7 +34,7 @@ class Classic (cliente_y_cuenta.Cliente):
 
     def verificaciones(self):
         with open('transacciones.html', 'w') as file:  
-            for el in datos_del_cliente['transacciones']:
+            for el in abriendo_json.datos_del_cliente['transacciones']:
                     if el['estado'] == 'ACEPTADA':
                         agregar_registros = file.writelines(f'<div> <h3>Fecha: {el["fecha"]}</h3> <p>Nombre: {self.nombre}</p> \n <p>Apellido: {self.apellido}</p> <p>Numero: {self.numero}</p> \n <p>Dni: {self.dni}</p> \n <p> Tipo: {el["tipo"]} </p> \n <p> Estado: {el["estado"]} </p> \n <p> Monto: {el["monto"]}')
 
@@ -87,7 +81,7 @@ class Gold (cliente_y_cuenta.Cliente):
 
     def verificaciones(self):
         with open('transacciones.html', 'w') as file:  
-            for el in datos_del_cliente['transacciones']:
+            for el in abriendo_json.datos_del_cliente['transacciones']:
                     if el['estado'] == 'ACEPTADA':
                         agregar_registros = file.writelines(f'<div> <h3>Fecha: {el["fecha"]}</h3> <p>Nombre: {self.nombre}</p> \n <p>Apellido: {self.apellido}</p> <p>Numero: {self.numero}</p> \n <p>Dni: {self.dni}</p> \n <p> Tipo: {el["tipo"]} </p> \n <p> Estado: {el["estado"]} </p> \n <p> Monto: {el["monto"]}')
 
@@ -147,7 +141,7 @@ class Black (cliente_y_cuenta.Cliente):
 
     def verificaciones(self):
         with open('transacciones.html', 'w') as file:  
-            for el in datos_del_cliente['transacciones']:
+            for el in abriendo_json.datos_del_cliente['transacciones']:
                     if el['estado'] == 'ACEPTADA':
                         agregar_registros = file.writelines(f'<div> <h3>Fecha: {el["fecha"]}</h3> <p>Nombre: {self.nombre}</p> \n <p>Apellido: {self.apellido}</p> <p>Numero: {self.numero}</p> \n <p>Dni: {self.dni}</p> \n <p> Tipo: {el["tipo"]} </p> \n <p> Estado: {el["estado"]} </p> \n <p> Monto: {el["monto"]}')
 

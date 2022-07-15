@@ -1,13 +1,5 @@
-#Abriendo el archivo json
-import json
-try:
-    with open('eventos_gold.json' , 'r') as archivo:
-        datos_del_cliente = json.load(archivo)#Guardo todos los datos del Json en la lista datos_del_cliente
-        print("Archivo obtenido con exito")
-except FileNotFoundError as err:
-    print("Archivo no encontrado")
-    quit()
 
+import abriendo_json
 # datos_del_cliente['nombre']   #Así se llaman a los atributos del JSON, en este caso estoy llamando al atributo nombre
 
 
@@ -19,7 +11,7 @@ class Cliente:
         self.numero = numero
         self.dni = dni
         self.tipo = tipo
-        self.direccion = (datos_del_cliente['direccion']['calle'],datos_del_cliente['direccion']['numero'],datos_del_cliente['direccion']['ciudad'],datos_del_cliente['direccion']['provincia'],datos_del_cliente['direccion']['pais'])
+        self.direccion = (abriendo_json.datos_del_cliente['direccion']['calle'],abriendo_json.datos_del_cliente['direccion']['numero'],abriendo_json.datos_del_cliente['direccion']['ciudad'],abriendo_json.datos_del_cliente['direccion']['provincia'],abriendo_json.datos_del_cliente['direccion']['pais'])
         
 #Creo los metodos
     def puede_crear_chequera(self):
