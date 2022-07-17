@@ -1,0 +1,123 @@
+.titulo{
+    text-align: center;
+    align-items: center;
+    color: #03658c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card {
+    align-items: center;
+    background-color: #84aebf;
+    align-content: center;
+    margin-left: 38%;
+    margin-bottom: 30px;
+    margin-top: 50px;  
+}
+
+.card-header{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 5px;
+    background-color: #2d5873 ;
+    font-size: large;
+    font-style: italic;
+   
+}
+
+.list-group {
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    list-style: none;
+    padding-left: 8px;
+    margin-left: 2px;
+    padding-bottom: 5px;
+    
+}
+
+
+
+.filas{
+    background-color: #84aebf;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+}
+ .aceptada1{
+    background-color: #9bfab0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+ }
+
+ .aceptada2{
+    background-color: #9bfab0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+ }
+ .rechazada1{
+    background-color: #ff8c78;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    }
+
+  .rechazada2{
+    background-color: #ff8c78; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+  .rechazada3{
+    background-color: #ff8c78; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+  .rechazada4 {
+    background-color: #ff8c78; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+  .rechazada5 {
+    background-color: #ff8c78; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+  .rechazada6{
+    background-color: #ff8c78; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+  .rechazada7 {
+    background-color: #ff8c78; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+
+ .rechazada8{
+    background-color: #ff8c78;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+.estado {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}

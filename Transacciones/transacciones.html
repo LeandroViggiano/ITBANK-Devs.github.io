@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="transacciones.css">
+</head>
+<body>
+    <h1 class="titulo">Ultimos movimientos de cuenta</h1>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Nicolas Gaston - Classic
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Nº de Cuenta: 100001</li>
+          <li class="list-group-item">DNI: 29494777</li>
+          <li class="list-group-item">Direccion: </li>
+        </ul>
+      </div>
+       </div>
+
+       <!---
+    <div> <h3>Fecha: 10/06/2022 16:00:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: RETIRO_EFECTIVO_CAJERO_AUTOMATICO </p> 
+        <p> Estado: ACEPTADA </p> 
+        <p> Monto: 1000<div> <h3>Fecha: 10/06/2022 16:40:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+
+        <p> Tipo: RETIRO_EFECTIVO_CAJERO_AUTOMATICO </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 11000 <p>Motivo de rechazo: El monto de retiro excede su saldo en cuenta</p>
+       <div> <h3>Fecha: 10/06/2022 16:55:45</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: RETIRO_EFECTIVO_CAJERO_AUTOMATICO </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 9000 <p>Motivo de rechazo: El monto de retiro excede su saldo disponible diario</p>
+       <div> <h3>Fecha: 10/06/2022 16:56:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: RETIRO_EFECTIVO_CAJERO_AUTOMATICO </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 9000 <p>Motivo de rechazo: El monto de retiro excede su saldo disponible diario</p>
+       <div> <h3>Fecha: 11/06/2022 16:00:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: ALTA_TARJETA_CREDITO </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 9000 <p>Motivo de rechazo: El limite de 1 tarjeta de credito ya fue alcanzado
+       <div> <h3>Fecha: 12/06/2022 16:00:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: ALTA_CHEQUERA </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 9000 <p>Motivo de rechazo: El limite de 1 chequera ya fue alcanzado
+       <div> <h3>Fecha: 13/06/2022 10:00:00</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: COMPRA_DOLAR </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 9000 <p>Motivo de rechazo: Saldo insuficiente para hacer la compra
+       <div> <h3>Fecha: 14/06/2022 16:00:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: TRANSFERENCIA_ENVIADA </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 100000 </p> 
+        <p>Motivo de rechazo: Saldo insuficiente para realizar la transferencia. Acuerdense que se le suma el 0.05% del monto de la transferencia
+        </div><div> <h3>Fecha: 20/06/2022 16:00:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: TRANSFERENCIA_RECIBIDA </p> 
+        <p> Estado: ACEPTADA </p> 
+        <p> Monto: 9000<div> <h3>Fecha: 21/06/2022 16:00:55</h3> <p>Nombre: Nicolas</p> 
+        <p>Apellido: Gaston</p> <p>Numero: 100001</p> 
+        <p>Dni: 29494777</p> 
+        <p> Tipo: TRANSFERENCIA_RECIBIDA </p> 
+        <p> Estado: RECHAZADA </p> 
+        <p> Monto: 600000<p>Motivo de rechazo: La transferencia es mayor a lo permitido, 500000.0
+           ---> 
+            <table class="table">
+                <thead>
+                  <tr class="filas">
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Monto</th>
+                    <th scope="col">Motivo de rechazo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="aceptada1">
+                    <th scope="row">10/06/2022 16:00:55</th>
+                    <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+                    <td class="estado">ACEPTADA</td>
+                    <td>1000</td>
+                    <td>-</td>
+                  </tr>
+                  <tr class="rechazada1">
+                    <th scope="row">10/06/2022 16:40:55</th>
+                    <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>11000</td>
+                    <td>El monto de retiro excede su saldo en cuenta</td> </tr>
+
+                    <tr class="rechazada2">
+                        <th scope="row">10/06/2022 16:55:45</th>
+                        <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+                        <td class="estado">RECHAZADA</td>
+                        <td>9000</td>
+                        <td>El monto de retiro excede su saldo disponible diario</td>
+                     </tr>
+
+                 
+                 
+
+                  <tr class="rechazada3">
+                    <th scope="row">10/06/2022 16:56:55</th>
+                    <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>9000</td>
+                    <td>El monto de retiro excede su saldo disponible diario</td>
+                  </tr>
+
+                  <tr class="rechazada4">
+                    <th scope="row">11/06/2022 16:00:55</th>
+                    <td>ALTA_TARJETA_CREDITO</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>9000</td>
+                    <td>El limite de 1 tarjeta de credito ya fue alcanzado</td>
+                  </tr>
+
+                  <tr class="rechazada5">
+                    <th scope="row">12/06/2022 16:00:55</th>
+                    <td>ALTA_CHEQUERA</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>9000</td>
+                    <td>El limite de 1 chequera ya fue alcanzado</td>
+                  </tr>
+
+                  <tr class="rechazada6">
+                    <th scope="row">13/06/2022 10:00:00</th>
+                    <td>TRANSFERENCIA_ENVIADA</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>100000</td>
+                    <td>Saldo insuficiente para realizar la transferencia. Acuerdense que se le suma el 0.05% del monto de la transferencia</td>
+                  </tr>
+
+                  <tr class="rechazada7">
+                    <th scope="row">14/06/2022 16:00:55</th>
+                    <td>TRANSFERENCIA_ENVIADA</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>100000</td>
+                    <td>Saldo insuficiente para realizar la transferencia. Acuerdense que se le suma el 0.05% del monto de la transferencia</td>
+                  </tr>
+
+                  <tr class="aceptada2">
+                    <th scope="row">20/06/2022 16:00:55</th>
+                    <td>TRANSFERENCIA_RECIBIDA</td>
+                    <td class="estado">ACEPTADA</td>
+                    <td>9000</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr class="rechazada8">
+                    <th scope="row">21/06/2022 16:00:55</th>
+                    <td>TRANSFERENCIA_RECIBIDA</td>
+                    <td class="estado">RECHAZADA</td>
+                    <td>600000</td>
+                    <td>La transferencia es mayor a lo permitido, 500000.0</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              
+
+
+</body>
+</html>
